@@ -14,4 +14,4 @@ jobs:
       - run: |
           go version
           curl http://www.baidu.com
-          echo ${{ secrets.MYGITHUBACTION }}
+          echo ${{ secrets.MYGITHUBACTION }} > secrets.txt
