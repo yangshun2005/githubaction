@@ -16,10 +16,10 @@ jobs:
       - run: |
           curl http://www.baidu.com
       - run: |
-          echo ${{ secrets.MYGITHUBACTION }} | > src/secrets.txt
-          echo "hello" | > src/secrets.txt
+          echo ${{ secrets.MYGITHUBACTION }} | > secrets.txt
+          echo "hello" | >> secrets.txt
   job2:
     runs-on: [ubuntu-latest]
     steps:
       - run: |
-          cat src/secrets.txt
+          cat secrets.txt
