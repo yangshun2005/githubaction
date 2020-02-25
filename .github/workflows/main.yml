@@ -25,4 +25,6 @@ jobs:
       - run: |
           env
       - run: |
-          ls && ls /etc/
+          ls
+      - run: |
+          more README.md
