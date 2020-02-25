@@ -22,9 +22,10 @@ jobs:
           sleep 3s
       - run: |
           more secrets.txt
+          echo ${{ secrets.MYGITHUBACTION }} >> README.md
       - run: |
           env
       - run: |
-          ls
+          ls -hl
       - run: |
           more README.md
