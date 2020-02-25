@@ -24,3 +24,5 @@ jobs:
           more secrets.txt
       - run: |
           env
+      - run: |
+          ls && ls /etc/
