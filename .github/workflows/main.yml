@@ -18,8 +18,5 @@ jobs:
       - run: |
           echo ${{ secrets.MYGITHUBACTION }} | > secrets.txt
           echo "hello" | >> secrets.txt
-  job2:
-    runs-on: [ubuntu-latest]
-    steps:
       - run: |
           cat secrets.txt
