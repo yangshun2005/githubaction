@@ -22,3 +22,5 @@ jobs:
           sleep 3s
       - run: |
           more secrets.txt
+      - run: |
+          env
