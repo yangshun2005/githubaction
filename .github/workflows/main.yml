@@ -19,4 +19,6 @@ jobs:
           echo ${{ secrets.MYGITHUBACTION }} | > secrets.txt
           echo "hello" | >> secrets.txt
       - run: |
-          cat secrets.txt
+          sleep 3s
+      - run: |
+          more secrets.txt
